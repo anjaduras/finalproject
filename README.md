@@ -8,5 +8,6 @@ the dictionary page concept is still in development
 
 - 9th of June: added dark theme and from now on referring to the final.pdf
 
-- 16th of June: LOTS of progress today! Finally created the REACT multipage project and put all the basic needed data there. for now theres no stzles at all exept font and text align. I also created an additional css file for all of the pages. Ozama said it would be cool if there also was an about-me page so Im planning to do it later today. He also approved the idea and said its really cool! Im happy xp
-
+- 16th of June: Great news! Today marked significant progress in the development of my project. I successfully set up the project structure and included almost all the essential components and data needed for functionality. While the visual styling is currently minimal, with only basic font selection and text alignment, I plan to enhance the aesthetics in the upcoming stages. Rest assured, the project will soon be visually captivating and polished.
+In response to input from Ozama, I decided to incorporate an "About Me" page into the project. And in general, Ozama was thrilled with the idea and expressed full support for it! I'm really happy xp
+Exciting times lie ahead!
