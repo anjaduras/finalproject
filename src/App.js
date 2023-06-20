@@ -4,6 +4,9 @@ import Home from './components/Home';
 import NjuraCourse from './components/NjuraCourse';
 import Dictionary from './components/Dictionary';
 import Game from './components/Game';
+import About from './components/About';
+import International from './components/International';
+import './App.css';
 
 function App() {
   return (
@@ -14,6 +17,8 @@ function App() {
       <Route path="/njuracourse" element={<NjuraCourse/>} />
       <Route path="/dictionary" element={<Dictionary/>} />
       <Route path="/game" element={<Game/>} />
+      <Route path="/about" element={<About/>} />
+      <Route path="/international" element={<International/>} />
       </Routes>
     </Router>
     </div>
