@@ -15,5 +15,5 @@ In response to input from Ozama, I decided to incorporate an "About Me" page int
 Exciting times lie ahead!
 
 - 20th of June: A lot of things today! I successfully added a YouTube API to my "NjuraCourse" page. The thing is the background pictures are horrifyingly bad. I dont really know how to fix it yet:( I also made the "Game" page a bit functional - the random gestures are generated, but I did nothing with buttons so far.
-- 
+  
 - 21st of June:
