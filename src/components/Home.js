@@ -66,7 +66,7 @@ function Home() {
 
       <div className='infocard'>
         <h2>WHO AM I?</h2>
-        <img src={emoji3} alt="" width={50} />
+        <img src={me} alt="" width={300} />
         <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores </p>
       </div>
       {/* <img src={me} alt="" width={500} /> */}

@@ -3,9 +3,9 @@
 }
 
 .HomeHeader {
+    background-color: #3C8AFF;
     height: 20%;
     padding: 10%;
-    background-color: #3C8AFF;
 }
 
 .navbar{
@@ -24,7 +24,7 @@ h1 {
 }
 
 .infocard {
-    display: flex;
+    display: block;
     padding: 10%;
 }
 
@@ -33,7 +33,10 @@ ul{
 }
 
 .HomeButton{
-    float: right;
+    background-color: #FFD600;
+    border-radius: 10px;
+    padding: 10px;
+    border-color: transparent;
 }
 
 .icon{

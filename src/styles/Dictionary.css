@@ -4,7 +4,17 @@
 }
 .learnArea{
     padding: 5%;
+    font-size: 30px;
+    list-style: none;
 }
+
+.DictionaryList {
+    display: inline-block;
+    margin: 10px;
+    padding: 15px;
+    border-radius: 100%;
+    background-color: #FFD600;
+  }
 
 .sign{
     width: 30px;

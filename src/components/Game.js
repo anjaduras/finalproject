@@ -6,6 +6,7 @@ import AlphabetData from '../alphabet.json';
 function Game() {
   const randomIndex = Math.floor(Math.random() * AlphabetData.length);
   const randomPicture = AlphabetData[randomIndex].photo;
+  const heart = "images/heart.png"
   return (
     <div className='gameBody'>
       <Link to="/" className='backLink'>ZURÜCK</Link>
@@ -19,9 +20,9 @@ function Game() {
       <button className='gameButton'>С</button>
       <button className='gameButton'>Н</button>
       <br /> <br /> <br /> <br /> <br /> <br />
-      <p>heart emoji</p>
-      <p>heart emoji</p>
-      <p>heart emoji</p>
+      <img src={heart} alt="" width={70} />
+      <img src={heart} alt="" width={70} />
+      <img src={heart} alt="" width={70} />
     </div>
   );
 }

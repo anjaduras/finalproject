@@ -13,3 +13,7 @@ the dictionary page concept is still in development
 In response to input from Ozama, I decided to incorporate an "About Me" page into the project. And in general, Ozama was thrilled with the idea and expressed full support for it! I'm really happy xp
 
 Exciting times lie ahead!
+
+- 20th of June: A lot of things today! I successfully added a YouTube API to my "NjuraCourse" page. The thing is the background pictures are horrifyingly bad. I dont really know how to fix it yet:( I also made the "Game" page a bit functional - the random gestures are generated, but I did nothing with buttons so far.
+- 
+- 21st of June:
