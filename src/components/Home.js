@@ -11,9 +11,12 @@ function Home() {
   const emoji4 = "images/emoji3.png"
   const emoji5 = "images/emoji4.png"
   const me = "images/me.jpg"
+  const background = "images/flag.jpg"
   return (
     <div className='homeBody'>
-      <header className='HomeHeader'>
+      <header className='HomeHeader' 
+    //  style={{ backgroundImage: `url(${background})`}}
+     >
         <div className='navbar'>
           <Link to="/game">GAME</Link>
           <Link to="/njuracourse">NJURA COURSE</Link>
@@ -66,8 +69,8 @@ function Home() {
         <img src={emoji3} alt="" width={50} />
         <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores </p>
       </div>
-      <img src={me} alt="" width={500} />
-      
+      {/* <img src={me} alt="" width={500} /> */}
+
       <footer>
         <FaInstagram size={40} className='icon' />
         <FaLinkedin size={40} className='icon' />
