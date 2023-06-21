@@ -13,3 +13,6 @@ the dictionary page concept is still in development
 In response to input from Ozama, I decided to incorporate an "About Me" page into the project. And in general, Ozama was thrilled with the idea and expressed full support for it! I'm really happy xp
 
 Exciting times lie ahead!
+
+- 20th of June:
+- 21st of June:
