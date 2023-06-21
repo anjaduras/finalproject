@@ -2,6 +2,7 @@
 .gameBody {
     background-color: #3C8AFF;
     padding: 5%;
+    font-size: 25px;
 }
 .gameButton{
     padding: 3%;

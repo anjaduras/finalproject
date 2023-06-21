@@ -12,10 +12,9 @@ function About() {
       <header className='AboutHeader'>
         <Link to="/" className='backLink'>ZURÜCK</Link>
         <h1>ABOUT ME</h1>
-
-
-      </header>
+          </header>
       <img src={me} alt="" width={300} className='me' />
+      <div className='AboutContent'>
       <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores </p>
 
 
@@ -30,12 +29,13 @@ function About() {
       </div>
 
       <h2>THINGS I LIKE:</h2>
- 
+
       <div className='ThingsILike'>
         <img src={image} alt="" width={200} />
         <img src={image} alt="" width={200} />
         <img src={image} alt="" width={200} />
-     
+
+      </div>
       </div>
       <footer>
         <FaInstagram size={40} className='icon' />

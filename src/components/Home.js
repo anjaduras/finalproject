@@ -14,9 +14,9 @@ function Home() {
   const background = "images/flag.jpg"
   return (
     <div className='homeBody'>
-      <header className='HomeHeader' 
-    //  style={{ backgroundImage: `url(${background})`}}
-     >
+      <header className='HomeHeader'
+      //  style={{ backgroundImage: `url(${background})`}}
+      >
         <div className='navbar'>
           <Link to="/game">GAME</Link>
           <Link to="/njuracourse">NJURA COURSE</Link>
@@ -45,6 +45,7 @@ function Home() {
         <h3><li>100 YEARS OLD</li></h3>
         <h3><li>90 DIALECTS</li></h3>
       </ul>
+ 
 
       <div className='infocard'>
         <h2>WOFÜR IST DIESE SEITE?</h2>
@@ -67,14 +68,16 @@ function Home() {
       <div className='infocard'>
         <h2>WHO AM I?</h2>
         <img src={me} alt="" width={300} />
-        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores </p>
+        <p>Leidenschaftlicher Frontend-Entwickler mit vielen Ideen. Engagiert für die Schaffung benutzerfreundlicher Web-Erlebnisse. Detailorientiert mit Fokus auf qualitativ hochwertigem Code.</p>
+        <br />
+        <h3>Check out my <Link to="https://www.youtube.com/channel/UCuCxer1qR2BBeF99V_n3mKA">YouTube.</Link></h3>
       </div>
       {/* <img src={me} alt="" width={500} /> */}
 
       <footer>
-        <FaInstagram size={40} className='icon' />
-        <FaLinkedin size={40} className='icon' />
-        <FaGithub size={40} className='icon' />
+        <FaInstagram size={50} className='icon' />
+        <FaLinkedin size={50} className='icon' />
+        <FaGithub size={50} className='icon' />
       </footer>
     </div>
   );
