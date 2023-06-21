@@ -1,10 +1,16 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import image from '../pictures/blue.png';
 import '../styles/Home.css';
 import { FaGithub, FaInstagram, FaLinkedin } from 'react-icons/fa';
 
 function Home() {
+  const temporary = "images/blue.png"
+  const emoji1 = "images/emoji.png"
+  const emoji2 = "images/emoji1.png"
+  const emoji3 = "images/emoji2.png"
+  const emoji4 = "images/emoji3.png"
+  const emoji5 = "images/emoji4.png"
+  const me = "images/me.jpg"
   return (
     <div className='homeBody'>
       <header className='HomeHeader'>
@@ -19,13 +25,16 @@ function Home() {
         </div>
         <br />
         <h1>UKRAINISCHE GEBÄRDENSPRACHE</h1>
-        <p>here will be emojies</p>
+        <img src={emoji1} alt="" width={50} />
+        <img src={emoji2} alt="" width={50} />
+        <img src={emoji4} alt="" width={40} />
       </header>
 
       <div className='infocard'>
-        <h2>WAS IST USL?</h2>
-        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores </p>
-        <img src={image} alt="" width={200} />
+        <h2>WAS IST UGS?</h2>
+        <img src={emoji1} alt="" width={50} />
+        <p>Die Ukrainische Gebärdensprache (UGS) ist eine Kommunikationsform, die von Gehörlosen und hörgeschädigten Menschen in der Ukraine verwendet wird. Sie basiert auf Handgesten und Körperbewegungen, um Informationen zu vermitteln. UGS ist eine eigenständige und visuell orientierte Sprache, die eine effektive Kommunikation ermöglicht und die Gehörlosengemeinschaft in der Ukraine verbindet. </p>
+
       </div>
 
       <ul>
@@ -36,14 +45,14 @@ function Home() {
 
       <div className='infocard'>
         <h2>WOFÜR IST DIESE SEITE?</h2>
+        <img src={emoji2} alt="" width={50} />
         <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores </p>
-        <img src={image} alt="" width={200} />
       </div>
 
       <div className='infocard'>
         <h2>HOW TO USE?</h2>
+        <img src={emoji4} alt="" width={50} />
         <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores </p>
-        <img src={image} alt="" width={200} />
       </div>
 
       <br />
@@ -54,14 +63,15 @@ function Home() {
 
       <div className='infocard'>
         <h2>WHO AM I?</h2>
+        <img src={emoji3} alt="" width={50} />
         <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores </p>
-        <img src={image} alt="" width={200} />
       </div>
-
+      <img src={me} alt="" width={500} />
+      
       <footer>
-        <FaInstagram size={40} className='icon'/>
-        <FaLinkedin size={40} className='icon'/>
-        <FaGithub size={40} className='icon'/>
+        <FaInstagram size={40} className='icon' />
+        <FaLinkedin size={40} className='icon' />
+        <FaGithub size={40} className='icon' />
       </footer>
     </div>
   );

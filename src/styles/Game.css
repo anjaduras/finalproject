@@ -13,3 +13,8 @@
 .gameButton:hover{
     background-color: #38ac12;
 }
+
+.gesture{
+    width: 500px;
+    border-radius: 10%;
+}

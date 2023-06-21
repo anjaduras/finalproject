@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import image from '../pictures/blue.png';
 import '../styles/International.css';
 import { FaGithub, FaInstagram, FaLinkedin } from 'react-icons/fa';
 
@@ -9,9 +8,9 @@ function International() {
         <div className='InterBody'>
             
             <header className='InterHeader'>
-            <Link to="/">ZURÜCK</Link>
+            <Link to="/" className='backLink'>ZURÜCK</Link>
                 <h1>WANT TO LEARN OTHER SIGN LANGUAGES?</h1>
-                <p>here will be a paragraph</p>
+                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed di</p>
             </header>
             <div className='quelle'>
                 <h2>WAS IST USL?</h2>
