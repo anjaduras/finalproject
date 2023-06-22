@@ -3,6 +3,12 @@
     padding: 5%;
     font-size: 25px;
 }
+
+.DictionaryList.selected {
+    background-color: rgb(255, 1, 196);
+    /* Add any other styles you want to apply to the selected letter */
+  }
+  
 .learnArea{
     padding: 5%;
     font-size: 30px;

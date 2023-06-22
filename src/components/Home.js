@@ -75,9 +75,15 @@ function Home() {
       {/* <img src={me} alt="" width={500} /> */}
 
       <footer>
-        <FaInstagram size={50} className='icon' />
-        <FaLinkedin size={50} className='icon' />
-        <FaGithub size={50} className='icon' />
+      <a href="https://www.instagram.com/tashoklasna/">
+          <FaInstagram size={50} className='icon' />
+        </a>
+        <a href="https://www.linkedin.com/in/annaduras/">
+          <FaLinkedin size={50} className='icon' />
+        </a>
+        <a href="https://github.com/anjaduras">
+          <FaGithub size={50} className='icon' />
+        </a>
       </footer>
     </div>
   );

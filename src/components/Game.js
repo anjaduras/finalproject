@@ -1,28 +1,58 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import '../styles/Game.css';
 import AlphabetData from '../alphabet.json';
 
 function Game() {
-  const randomIndex = Math.floor(Math.random() * AlphabetData.length);
-  const randomPicture = AlphabetData[randomIndex].photo;
-  const heart = "images/heart.png"
+  const [selectedAnswer, setSelectedAnswer] = useState(null);
+  const randomLetter = AlphabetData[Math.floor(Math.random() * AlphabetData.length)];
+  const randomPicture = randomLetter.photo;
+  const heart = 'images/heart.png';
+
+  const randomLetters = AlphabetData
+    .filter(letter => letter.letter !== randomLetter.letter)
+    .sort(() => 0.5 - Math.random())
+    .slice(0, 2);
+
+  randomLetters.push(randomLetter);
+  randomLetters.sort(() => 0.5 - Math.random());
+
+  const correctAnswer = randomLetter.letter; // Use the letter property instead of writtenVersion
+
+  const handleAnswerSelection = (answer) => {
+    setSelectedAnswer(answer);
+  };
+
   return (
     <div className='gameBody'>
-      <Link to="/" className='backLink'>ZURÜCK</Link>
+      <Link to='/' className='backLink'>ZURÜCK</Link>
       <h1>GUESS THE SIGN!</h1>
-      <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores</p>
-      <br /> <br /> <br /> <br />
-      <img src={randomPicture} alt="Random Letter" className='gesture' />
-      <br /> <br /> <br />
+      <p>
+        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
+        ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
+      </p>
+      <br /><br /><br /><br />
+      <img src={randomPicture} alt='Random Letter' className='gesture' />
+      <br /><br /><br />
       <h3>What does this look like?</h3>
-      <button className='gameButton'>Р</button>
-      <button className='gameButton'>С</button>
-      <button className='gameButton'>Н</button>
-      <br /> <br /> <br /> <br /> <br /> <br />
-      <img src={heart} alt="" width={70} />
-      <img src={heart} alt="" width={70} />
-      <img src={heart} alt="" width={70} />
+      {randomLetters.map((letter, index) => (
+        <button
+          key={index}
+          className={`gameButton ${selectedAnswer === letter.letter ? 'selected' : ''}`}
+          onClick={() => handleAnswerSelection(letter.letter)}
+        >
+          {letter.letter}
+        </button>
+      ))}
+      {selectedAnswer !== null && (
+        <p className={`feedback ${selectedAnswer === correctAnswer ? 'correct' : 'incorrect'}`}>
+          {selectedAnswer === correctAnswer ? 'Correct!' : 'Incorrect!'}
+        </p>
+      )}
+      <br /><br /><br /><br /><br /><br />
+      <img src={heart} alt='' width={70} />
+      <img src={heart} alt='' width={70} />
+      <img src={heart} alt='' width={70} />
     </div>
   );
 }
