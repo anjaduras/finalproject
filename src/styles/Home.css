@@ -3,15 +3,12 @@
     font-size: 25px;
 }
 
-/* .HomeHeader {
-    background-color: #3C8AFF;
+.HomeHeader {
     height: 20%;
     padding: 10%;
-} */
-
-.dual-colored-header {
-    background: linear-gradient(to right, #ff0000, #0000ff); /* Replace the colors with your desired colors */
-  }
+    background-repeat: no-repeat;
+    background-size: cover;
+} 
 
 .navbar {
     display: flex;

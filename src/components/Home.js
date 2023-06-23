@@ -20,7 +20,7 @@ function Home() {
   return (
 
     <div className='homeBody'>
-      <header className='HomeHeader'>
+      <header style={{ backgroundImage: `url(${background})` }} className='HomeHeader'>
         <div className='navbar'>
           <Link to="/njuracourse" className='backLink'>NJURA COURSE</Link>
           <Link to="/international" className='backLink'>INTERNATIONAL</Link>
