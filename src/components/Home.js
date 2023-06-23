@@ -1,5 +1,5 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
 import '../styles/Home.css';
 import { FaGithub, FaInstagram, FaLinkedin } from 'react-icons/fa';
 
@@ -14,18 +14,19 @@ function Home() {
   const home2 = "images/home2.jpg"
   const me = "images/me.jpg"
   const background = "images/flag.jpg"
+  const [isDecoded, setIsDecoded] = useState(false);
+  useEffect(() => {
+    setIsDecoded(true);
+  }, []);
+
   return (
     <div className='homeBody'>
-      <header className='HomeHeader'
-      //  style={{ backgroundImage: `url(${background})`}}
-      >
+      <header className='HomeHeader'>
         <div className='navbar'>
-          <Link to="/game">GAME</Link>
           <Link to="/njuracourse">NJURA COURSE</Link>
-          <Link to="/dictionary">DICTIONARY</Link>
           <Link to="/international">INTERNATIONAL</Link>
           <Link to="/about">ABOUT</Link>
-          <button className='HomeButton'>Language</button>
+          {/* <button className='HomeButton'>Language</button> */}
           <button className='HomeButton'>Dark-Light theme</button>
         </div>
         <br />
@@ -42,10 +43,10 @@ function Home() {
         <img src={home1} alt="" width={500} />
       </div>
 
-      <ul>
-        <h3><li>230 K SPEAKERS</li></h3>
-        <h3><li>100 YEARS OLD</li></h3>
-        <h3><li>90 DIALECTS</li></h3>
+      <ul className={`decoding-effect ${isDecoded ? 'decoded' : ''}`}>
+        <li>230 K SPEAKERS</li>
+        <li>100 YEARS OLD</li>
+        <li>90 DIALECTS</li>
       </ul>
 
 
@@ -70,7 +71,9 @@ function Home() {
       <div className='infocard'>
         <h2>WHO AM I?</h2>
         <img src={me} alt="" width={300} />
-        <p>Leidenschaftlicher Frontend-Entwickler mit vielen Ideen. Engagiert für die Schaffung benutzerfreundlicher Web-Erlebnisse. Detailorientiert mit Fokus auf qualitativ hochwertigem Code.</p>
+        <p>Leidenschaftlicher Frontend-Entwickler mit vielen Ideen. Engagiert für die Schaffung benutzerfreundlicher Web-Erlebnisse. Detailorientiert mit Fokus auf qualitativ hochwertigem Code.
+          <Link to="/about"> Get to know me better.</Link>
+        </p>
         <br />
         <h3>Check out my <Link to="https://www.youtube.com/channel/UCuCxer1qR2BBeF99V_n3mKA">YouTube.</Link></h3>
       </div>

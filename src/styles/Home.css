@@ -9,9 +9,32 @@
     padding: 10%;
 }
 
-.navbar{
+.navbar {
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
+    float: left;
+}
+
+.decoding-effect li {
+    overflow: hidden;
+    height: 0;
+    animation: decoding-effect 1s forwards;
+    animation-delay: 0.5s;
+}
+
+.decoding-effect.decoded li {
+    height: auto;
+}
+
+@keyframes decoding-effect {
+    0% {
+        height: 0;
+    }
+
+    100% {
+        height: 2rem;
+    }
 }
 
 footer {
@@ -29,17 +52,17 @@ h1 {
     padding: 10%;
 }
 
-ul{
+ul {
     list-style: none;
 }
 
-.HomeButton{
+.HomeButton {
     background-color: #FFD600;
     border-radius: 10px;
     padding: 10px;
     border-color: transparent;
 }
 
-.icon{
+.icon {
     color: #FFD600;
 }
