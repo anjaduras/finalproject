@@ -18,4 +18,6 @@ Exciting times lie ahead!
   
 - 21st of June: I mostly worked on Dictionary page today. Now the alphabet part is all done and looking really pretty. Still need no add GIFs for greetings and colours. I also provided all of the needed info for International page- 5 websites with link and explanation.
 
-- 22nd of June: planning to work on Game today.
+- 22nd of June: planning to work on Game today. UPD: I dont recall what I did exactly, but I sure made some stuff with game. Not really succesful though lol
+
+- 23 of June: Sooo today is style improvement day! I styled the About, NJ Course, Home. I also added Contact page and decorative pictures to Home and About. The game works- still not properly- the dictionary is still alphabet only, and Im still contemplaining if I need to do login. Yep
