@@ -10,6 +10,8 @@ function Home() {
   const emoji3 = "images/emoji2.png"
   const emoji4 = "images/emoji3.png"
   const emoji5 = "images/emoji4.png"
+  const home1 = "images/home1.jpg"
+  const home2 = "images/home2.jpg"
   const me = "images/me.jpg"
   const background = "images/flag.jpg"
   return (
@@ -37,7 +39,7 @@ function Home() {
         <h2>WAS IST UGS?</h2>
         <img src={emoji1} alt="" width={50} />
         <p>Die Ukrainische Gebärdensprache (UGS) ist eine Kommunikationsform, die von Gehörlosen und hörgeschädigten Menschen in der Ukraine verwendet wird. Sie basiert auf Handgesten und Körperbewegungen, um Informationen zu vermitteln. UGS ist eine eigenständige und visuell orientierte Sprache, die eine effektive Kommunikation ermöglicht und die Gehörlosengemeinschaft in der Ukraine verbindet. </p>
-
+        <img src={home1} alt="" width={500} />
       </div>
 
       <ul>
@@ -45,19 +47,19 @@ function Home() {
         <h3><li>100 YEARS OLD</li></h3>
         <h3><li>90 DIALECTS</li></h3>
       </ul>
- 
+
 
       <div className='infocard'>
         <h2>WOFÜR IST DIESE SEITE?</h2>
         <img src={emoji2} alt="" width={50} />
         <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores </p>
-      </div>
-
-      <div className='infocard'>
+        <img src={home2} alt="" width={500} />
         <h2>HOW TO USE?</h2>
         <img src={emoji4} alt="" width={50} />
         <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores </p>
       </div>
+
+
 
       <br />
       <h2>GO TO <Link to="/dictionary">DICTIONARY</Link></h2>
@@ -75,7 +77,7 @@ function Home() {
       {/* <img src={me} alt="" width={500} /> */}
 
       <footer>
-      <a href="https://www.instagram.com/tashoklasna/">
+        <a href="https://www.instagram.com/tashoklasna/">
           <FaInstagram size={50} className='icon' />
         </a>
         <a href="https://www.linkedin.com/in/annaduras/">

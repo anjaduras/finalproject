@@ -6,6 +6,9 @@ import { FaGithub, FaInstagram, FaLinkedin } from 'react-icons/fa';
 function About() {
   const image = "images/blue.png"
   const me = "images/me.jpg"
+  const about1 = "images/about1.jpg"
+  const about2 = "images/about2.jpg"
+  const about3 = "images/about3.jpg"
   return (
     <div className='AboutBody'>
 
@@ -31,9 +34,13 @@ function About() {
         <h2>THINGS I LIKE:</h2>
 
         <div className='ThingsILike'>
-          <img src={image} alt="" width={200} />
-          <img src={image} alt="" width={200} />
-          <img src={image} alt="" width={200} />
+
+          <img src={about2} alt="" width={400} />
+          <img src={about1} alt="" width={400} />
+          <img src={about3} alt="" width={400} />
+          {/* <p>baking</p>
+          <p>art</p>
+          <p>cats</p> */}
 
         </div>
       </div>
