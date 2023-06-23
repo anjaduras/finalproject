@@ -20,6 +20,11 @@
         "writtenVersion": "The written version of letter Г"
     },
     {
+        "letter": "Ґ",
+        "photo": "../images/sign_alphabet/Ґ.jpg",
+        "writtenVersion": "The written version of letter Ґ"
+    },
+    {
         "letter": "Д",
         "photo": "../images/sign_alphabet/Д.jpg",
         "writtenVersion": "The written version of letter Д"
@@ -53,6 +58,16 @@
         "letter": "І",
         "photo": "../images/sign_alphabet/І.jpg",
         "writtenVersion": "The written version of letter І"
+    },
+    {
+        "letter": "Ї",
+        "photo": "../images/sign_alphabet/Ї.jpg",
+        "writtenVersion": "The written version of letter Ї"
+    },
+    {
+        "letter": "Й",
+        "photo": "../images/sign_alphabet/Й.jpg",
+        "writtenVersion": "The written version of letter Й"
     },
     {
         "letter": "К",
@@ -128,6 +143,11 @@
         "letter": "Ш",
         "photo": "../images/sign_alphabet/Ш.jpg",
         "writtenVersion": "The written version of letter Ш"
+    },
+    {
+        "letter": "Щ",
+        "photo": "../images/sign_alphabet/Щ.jpg",
+        "writtenVersion": "The written version of letter Щ"
     },
     {
         "letter": "Ь",
