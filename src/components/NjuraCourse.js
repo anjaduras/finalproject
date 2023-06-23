@@ -49,15 +49,13 @@ function NjuraCourse() {
     return (
         <div className='CourseBody'>
             <header className='CourseHeader'>
-            <Link to="/" className='backLink'>ZURÜCK</Link>
+                <Link to="/" className='backLink'>ZURÜCK</Link>
 
                 <h1>NJURA POKAZHE</h1>
                 <p>
-                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-                    nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-                    erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
+                    Hier teile ich Tutorials um anderen beim Erlernen der UGS zu helfen und ein tieferes Verständnis für die gehörlosen Gemeinschaft zu schaffen. Complett beginner friendly!
                 </p>
-                <input type='text' value={searchQuery} onChange={handleInputChange} />
+                <input type='text' value={searchQuery} onChange={handleInputChange} className='NPInput' placeholder='Search...'/>
             </header>
             {videoSuggestions.length > 0 ? (
                 <ul>

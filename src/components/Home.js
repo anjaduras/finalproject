@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import React, { useState, useEffect } from 'react';
 import '../styles/Home.css';
 import DecodingList from './DecodingList';
-import { FaGithub, FaInstagram, FaLinkedin } from 'react-icons/fa';
+import { FaGithub, FaInstagram, FaLinkedin, FaMoon, FaSun } from 'react-icons/fa';
 
 function Home() {
   const temporary = "images/blue.png"
@@ -16,15 +16,18 @@ function Home() {
   const me = "images/me.jpg"
   const background = "images/flag.jpg"
   const items = ['230 K SPEAKERS', '100 YEARS OLD', '90 DIALECTS'];
+
   return (
+
     <div className='homeBody'>
       <header className='HomeHeader'>
         <div className='navbar'>
-          <Link to="/njuracourse">NJURA COURSE</Link>
-          <Link to="/international">INTERNATIONAL</Link>
-          <Link to="/about">ABOUT</Link>
+          <Link to="/njuracourse" className='backLink'>NJURA COURSE</Link>
+          <Link to="/international" className='backLink'>INTERNATIONAL</Link>
+          <Link to="/about" className='backLink'>ABOUT</Link>
+          <Link to="/contact" className='backLink'>CONTACT</Link>
           {/* <button className='HomeButton'>Language</button> */}
-          <button className='HomeButton'>Dark-Light theme</button>
+
         </div>
         <br />
         <h1>UKRAINISCHE GEBÄRDENSPRACHE</h1>
@@ -39,7 +42,7 @@ function Home() {
         <p>Die Ukrainische Gebärdensprache (UGS) ist eine Kommunikationsform, die von Gehörlosen und hörgeschädigten Menschen in der Ukraine verwendet wird. Sie basiert auf Handgesten und Körperbewegungen, um Informationen zu vermitteln. UGS ist eine eigenständige und visuell orientierte Sprache, die eine effektive Kommunikation ermöglicht und die Gehörlosengemeinschaft in der Ukraine verbindet. </p>
         <img src={home1} alt="" width={500} />
       </div>
-      
+
       <DecodingList items={items} />
 
       <div className='infocard'>
