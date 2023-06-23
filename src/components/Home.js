@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import React, { useState, useEffect } from 'react';
 import '../styles/Home.css';
+import DecodingList from './DecodingList';
 import { FaGithub, FaInstagram, FaLinkedin } from 'react-icons/fa';
 
 function Home() {
@@ -14,11 +15,7 @@ function Home() {
   const home2 = "images/home2.jpg"
   const me = "images/me.jpg"
   const background = "images/flag.jpg"
-  const [isDecoded, setIsDecoded] = useState(false);
-  useEffect(() => {
-    setIsDecoded(true);
-  }, []);
-
+  const items = ['230 K SPEAKERS', '100 YEARS OLD', '90 DIALECTS'];
   return (
     <div className='homeBody'>
       <header className='HomeHeader'>
@@ -42,13 +39,8 @@ function Home() {
         <p>Die Ukrainische Gebärdensprache (UGS) ist eine Kommunikationsform, die von Gehörlosen und hörgeschädigten Menschen in der Ukraine verwendet wird. Sie basiert auf Handgesten und Körperbewegungen, um Informationen zu vermitteln. UGS ist eine eigenständige und visuell orientierte Sprache, die eine effektive Kommunikation ermöglicht und die Gehörlosengemeinschaft in der Ukraine verbindet. </p>
         <img src={home1} alt="" width={500} />
       </div>
-
-      <ul className={`decoding-effect ${isDecoded ? 'decoded' : ''}`}>
-        <li>230 K SPEAKERS</li>
-        <li>100 YEARS OLD</li>
-        <li>90 DIALECTS</li>
-      </ul>
-
+      
+      <DecodingList items={items} />
 
       <div className='infocard'>
         <h2>WOFÜR IST DIESE SEITE?</h2>

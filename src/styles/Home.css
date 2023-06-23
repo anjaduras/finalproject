@@ -16,27 +16,6 @@
     float: left;
 }
 
-.decoding-effect li {
-    overflow: hidden;
-    height: 0;
-    animation: decoding-effect 1s forwards;
-    animation-delay: 0.5s;
-}
-
-.decoding-effect.decoded li {
-    height: auto;
-}
-
-@keyframes decoding-effect {
-    0% {
-        height: 0;
-    }
-
-    100% {
-        height: 2rem;
-    }
-}
-
 footer {
     background-color: #3C8AFF;
     padding: 7%;
