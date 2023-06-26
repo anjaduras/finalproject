@@ -37,22 +37,27 @@ function Home() {
       </header>
 
       <div className='infocard'>
-        <h2>WAS IST UGS?</h2>
-        <img src={emoji1} alt="" width={50} />
-        <p>Die Ukrainische Gebärdensprache (UGS) ist eine Kommunikationsform, die von Gehörlosen und hörgeschädigten Menschen in der Ukraine verwendet wird. Sie basiert auf Handgesten und Körperbewegungen, um Informationen zu vermitteln. UGS ist eine eigenständige und visuell orientierte Sprache, die eine effektive Kommunikation ermöglicht und die Gehörlosengemeinschaft in der Ukraine verbindet. </p>
+        <div className='cardText'>
+          <h2>WAS IST UGS?</h2>
+          <img src={emoji1} alt="" width={50} />
+          <p>Die Ukrainische Gebärdensprache (UGS) ist eine Kommunikationsform, die von Gehörlosen und hörgeschädigten Menschen in der Ukraine verwendet wird. Sie basiert auf Handgesten und Körperbewegungen, um Informationen zu vermitteln. UGS ist eine eigenständige und visuell orientierte Sprache, die eine effektive Kommunikation ermöglicht und die Gehörlosengemeinschaft in der Ukraine verbindet. </p>
+        </div>
         <img src={home1} alt="" width={500} />
       </div>
 
       <DecodingList items={items} />
 
       <div className='infocard'>
-        <h2>WOFÜR IST DIESE SEITE?</h2>
-        <img src={emoji2} alt="" width={50} />
-        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores </p>
+        <div className='cardText'>
+          <h2>WOFÜR IST DIESE SEITE?</h2>
+          <img src={emoji2} alt="" width={50} />
+          <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores </p>
+          <br /><br /><br />
+          <h2>HOW TO USE?</h2>
+          <img src={emoji4} alt="" width={50} />
+          <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores </p>
+        </div>
         <img src={home2} alt="" width={500} />
-        <h2>HOW TO USE?</h2>
-        <img src={emoji4} alt="" width={50} />
-        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores </p>
       </div>
 
 
@@ -63,7 +68,7 @@ function Home() {
       <h2><Link to="/game">PLAY</Link></h2>
       <br />
 
-      <div className='infocard'>
+       
         <h2>WHO AM I?</h2>
         <img src={me} alt="" width={300} />
         <p>Leidenschaftlicher Frontend-Entwickler mit vielen Ideen. Engagiert für die Schaffung benutzerfreundlicher Web-Erlebnisse. Detailorientiert mit Fokus auf qualitativ hochwertigem Code.
@@ -71,7 +76,7 @@ function Home() {
         </p>
         <br />
         <h3>Check out my <Link to="https://www.youtube.com/channel/UCuCxer1qR2BBeF99V_n3mKA">YouTube.</Link></h3>
-      </div>
+
       {/* <img src={me} alt="" width={500} /> */}
 
       <footer>
