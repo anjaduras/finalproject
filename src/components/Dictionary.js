@@ -31,7 +31,7 @@ function Dictionary() {
           <summary>ALPHABET</summary>
           {AlphabetData.map((letter) => (
             <li
-              key={letter.id}
+              key={letter.letter}
               onClick={() => handleLetterClick(letter)}
               className={`DictionaryList ${selectedLetter === letter ? 'selected' : ''}`}
             >
@@ -49,15 +49,15 @@ function Dictionary() {
         <br />
         <details>
           <summary>COLOURS</summary>
-          <li>RED</li>
-          <li>ORANGE</li>
-          <li>YELLOW</li>
-          <li>GREEN</li>
-          <li>BLUE</li>
-          <li>PURPLE</li>
-          <li>BLACK</li>
-          <li>WHITE</li>
-          <li>PINK</li>
+          <li className='red'>RED</li>
+          <li className='orange'>ORANGE</li>
+          <li className='yellow'>YELLOW</li>
+          <li className='green'>GREEN</li>
+          <li className='blue'>BLUE</li>
+          <li className='purple'>PURPLE</li>
+          <li className='black'>BLACK</li>
+          <li className='white'>WHITE</li>
+          <li className='pink'>PINK</li>
         </details>
         <br />
         <details>
