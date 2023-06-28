@@ -30,7 +30,7 @@ function About() {
           <h2>HOW TO USE?</h2>
           <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores </p>
         </div>
-
+    
         <h2>THINGS I LIKE:</h2>
 
         <div className='ThingsILike'>
@@ -43,6 +43,7 @@ function About() {
           <p>cats</p> */}
 
         </div>
+        <h3>Check out my <Link to="https://www.youtube.com/channel/UCuCxer1qR2BBeF99V_n3mKA">YouTube.</Link></h3>
       </div>
       <footer>
         <a href="https://www.instagram.com/tashoklasna/">

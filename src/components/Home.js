@@ -20,7 +20,7 @@ function Home() {
   return (
 
     <div className='homeBody'>
-      <header style={{ backgroundImage: `url(${background})` }} className='HomeHeader'>
+      <header className='HomeHeader'>
         <div className='navbar'>
           <Link to="/njuracourse" className='backLink'>NJURA COURSE</Link>
           <Link to="/international" className='backLink'>INTERNATIONAL</Link>
@@ -61,20 +61,25 @@ function Home() {
       </div>
 
       <br />
-      <h2>GO TO <Link to="/dictionary">DICTIONARY</Link></h2>
-      <p>or try your luck and</p>
-      <h2><Link to="/game">PLAY</Link></h2>
+      <div className='dorplay'>
+        <h2>GO TO <Link to="/dictionary">DICTIONARY</Link></h2>
+        <p>or try your luck and</p>
+        <h2><Link to="/game">PLAY</Link></h2>
+      </div>
       <br />
 
-        <h2>WHO AM I?</h2>
-        <img src={me} alt="" width={300} />
-        <p>Leidenschaftlicher Frontend-Entwickler mit vielen Ideen. Engagiert für die Schaffung benutzerfreundlicher Web-Erlebnisse. Detailorientiert mit Fokus auf qualitativ hochwertigem Code.
-          <Link to="/about"> Get to know me better.</Link>
-        </p>
-        <br />
-        <h3>Check out my <Link to="https://www.youtube.com/channel/UCuCxer1qR2BBeF99V_n3mKA">YouTube.</Link></h3>
+      <div className='infocard'>
+        <div className='cardText'>
+          <h2>WHO AM I?</h2>
+          <p>Leidenschaftlicher Frontend-Entwickler mit vielen Ideen. Engagiert für die Schaffung benutzerfreundlicher Web-Erlebnisse. Detailorientiert mit Fokus auf qualitativ hochwertigem Code.
+          Leidenschaftlicher Frontend-Entwickler mit vielen Ideen. Engagiert für die Schaffung benutzerfreundlicher Web-Erlebnisse. Detailorientiert mit Fokus auf qualitativ hochwertigem Code.
+            <Link to="/about"> Get to know me better.</Link>
+          </p>
+          <br />
+        </div>
+        <img src={me} alt="" width={300}/>
+      </div>
 
-      {/* <img src={me} alt="" width={500} /> */}
 
       <footer>
         <a href="https://www.instagram.com/tashoklasna/">
