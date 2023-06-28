@@ -53,7 +53,7 @@ function Dictionary() {
           />
         )}
         <br />
-        <details>
+        <details onToggle={handleListClose}>
           <summary>COLOURS</summary>
           {ColorsData.map((color) => (
             <li
