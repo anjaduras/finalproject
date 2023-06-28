@@ -1,0 +1,30 @@
+[
+    {
+        "greeting": "Good morning!",
+        "sign": "../videos/morning.mp4"
+    },
+    {
+        "greeting": "Good evening!",
+        "sign": "../videos/evening.mp4"
+    },
+    {
+        "greeting": "Good night!",
+        "sign": "../videos/nacht.mp4"
+    },
+    {
+        "greeting": "Hi! (Formal)",
+        "sign": "../videos/formalhi.mp4"
+    },
+    {
+        "greeting": "Hi! (Informal)",
+        "sign": "../videos/formalhi.mp4"
+    },
+    {
+        "greeting": "See you!",
+        "sign": "../videos/seeyou.mp4"
+    },
+    {
+        "greeting": "Alles Gute!",
+        "sign": "../videos/allesgute.mp4"
+    }
+]

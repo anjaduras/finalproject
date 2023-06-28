@@ -3,24 +3,39 @@ import { Link } from 'react-router-dom';
 import '../styles/Dictionary.css';
 import AlphabetData from '../alphabet.json';
 import ColorsData from '../colors.json';
+import GreetingData from '../greetings.json';
 
 function Dictionary() {
   const [selectedLetter, setSelectedLetter] = useState(null);
   const [selectedColor, setSelectedColor] = useState(null);
+  const [selectedGreeting, setSelectedGreeting] = useState(null);
 
   const handleLetterClick = (letter) => {
     setSelectedLetter(letter);
     setSelectedColor(null);
+    setSelectedGreeting(null);
   };
 
   const handleColorClick = (color) => {
-    setSelectedColor(color);
+    if (selectedColor === color) {
+      setSelectedColor(null);
+    } else {
+      setSelectedColor(color);
+      setSelectedLetter(null);
+      setSelectedGreeting(null);
+    }
+  };
+
+  const handleGreetingClick = (greeting) => {
+    setSelectedGreeting(greeting);
     setSelectedLetter(null);
+    setSelectedColor(null);
   };
 
   const handleListClose = () => {
     setSelectedLetter(null);
     setSelectedColor(null);
+    setSelectedGreeting(null);
   };
 
   return (
@@ -60,6 +75,10 @@ function Dictionary() {
               key={color.colour}
               onClick={() => handleColorClick(color)}
               className={`DictionaryList ${selectedColor === color ? 'selected' : ''}`}
+              style={{
+                backgroundColor: color.colour,
+                color: color.colour === 'black' ? 'white' : 'black',
+              }}
             >
               {color.colour}
             </li>
@@ -74,16 +93,26 @@ function Dictionary() {
           />
         )}
         <br />
-        <details>
-          <summary>GREETING</summary>
-          <li>Good morning!</li>
-          <li>Good evening!</li>
-          <li>Good night!</li>
-          <li>Hi! (Formal)</li>
-          <li>Hi! (Informal)</li>
-          <li>See you!</li>
-          <li>Alles Gute!</li>
+        <details onToggle={handleListClose}>
+          <summary>GREETINGS</summary>
+          {GreetingData.map((greeting) => (
+            <li
+              key={greeting.greeting}
+              onClick={() => handleGreetingClick(greeting)}
+              className={`DictionaryList ${selectedGreeting === greeting ? 'selected' : ''}`}
+            >
+              {greeting.greeting}
+            </li>
+          ))}
         </details>
+        {selectedGreeting && (
+          <video
+            src={selectedGreeting.sign}
+            controls
+            loop
+            style={{ width: '300px', height: 'auto', borderRadius: '20px' }}
+          />
+        )}
       </div>
     </div>
   );
