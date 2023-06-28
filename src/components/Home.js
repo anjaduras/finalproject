@@ -60,15 +60,12 @@ function Home() {
         <img src={home2} alt="" width={500} />
       </div>
 
-
-
       <br />
       <h2>GO TO <Link to="/dictionary">DICTIONARY</Link></h2>
       <p>or try your luck and</p>
       <h2><Link to="/game">PLAY</Link></h2>
       <br />
 
-       
         <h2>WHO AM I?</h2>
         <img src={me} alt="" width={300} />
         <p>Leidenschaftlicher Frontend-Entwickler mit vielen Ideen. Engagiert für die Schaffung benutzerfreundlicher Web-Erlebnisse. Detailorientiert mit Fokus auf qualitativ hochwertigem Code.
