@@ -1,18 +1,26 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import '../styles/Dictionary.css';
 import AlphabetData from '../alphabet.json';
-import { useState } from 'react';
+import ColorsData from '../colors.json';
 
 function Dictionary() {
   const [selectedLetter, setSelectedLetter] = useState(null);
+  const [selectedColor, setSelectedColor] = useState(null);
 
   const handleLetterClick = (letter) => {
     setSelectedLetter(letter);
+    setSelectedColor(null);
+  };
+
+  const handleColorClick = (color) => {
+    setSelectedColor(color);
+    setSelectedLetter(null);
   };
 
   const handleListClose = () => {
     setSelectedLetter(null);
+    setSelectedColor(null);
   };
 
   return (
@@ -47,16 +55,24 @@ function Dictionary() {
         <br />
         <details>
           <summary>COLOURS</summary>
-          <li className='red'>RED</li>
-          <li className='orange'>ORANGE</li>
-          <li className='yellow'>YELLOW</li>
-          <li className='green'>GREEN</li>
-          <li className='blue'>BLUE</li>
-          <li className='purple'>PURPLE</li>
-          <li className='black'>BLACK</li>
-          <li className='white'>WHITE</li>
-          <li className='pink'>PINK</li>
+          {ColorsData.map((color) => (
+            <li
+              key={color.colour}
+              onClick={() => handleColorClick(color)}
+              className={`DictionaryList ${selectedColor === color ? 'selected' : ''}`}
+            >
+              {color.colour}
+            </li>
+          ))}
         </details>
+        {selectedColor && (
+          <video
+            src={selectedColor.sign}
+            controls
+            loop
+            style={{ width: '300px', height: 'auto', borderRadius: '20px' }}
+          />
+        )}
         <br />
         <details>
           <summary>GREETING</summary>

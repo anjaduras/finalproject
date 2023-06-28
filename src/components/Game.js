@@ -5,6 +5,7 @@ import AlphabetData from '../alphabet.json';
 
 function Game() {
   const [selectedAnswer, setSelectedAnswer] = useState(null);
+  const [score, setScore] = useState(0);
   const randomLetter = AlphabetData[Math.floor(Math.random() * AlphabetData.length)];
   const randomPicture = randomLetter.photo;
   const heart = 'images/heart.png';
@@ -17,10 +18,15 @@ function Game() {
   randomLetters.push(randomLetter);
   randomLetters.sort(() => 0.5 - Math.random());
 
-  const correctAnswer = randomLetter.letter; // Use the letter property instead of writtenVersion
+  const correctAnswer = randomLetter.letter;
 
   const handleAnswerSelection = (answer) => {
-    setSelectedAnswer(answer);
+    if (answer === correctAnswer) {
+      setSelectedAnswer(answer);
+      setScore(prevScore => prevScore + 1);
+    } else {
+      setSelectedAnswer(null);
+    }
   };
 
   return (
@@ -49,7 +55,8 @@ function Game() {
           {selectedAnswer === correctAnswer ? 'Correct!' : 'Incorrect!'}
         </p>
       )}
-      <br /><br /><br /><br /><br /><br />
+      <br />
+      <p>Score: {score}</p>
       <img src={heart} alt='' width={70} />
       <img src={heart} alt='' width={70} />
       <img src={heart} alt='' width={70} />

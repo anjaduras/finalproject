@@ -1,0 +1,38 @@
+[
+    {
+        "colour": "red",
+        "sign": "../videos/red.mp4"
+    },
+    {
+        "colour": "orange",
+        "sign": "../videos/orange.mp4"
+    },
+    {
+        "colour": "yellow",
+        "sign": "../videos/yellow.mp4"
+    },
+    {
+        "colour": "green",
+        "sign": "../videos/green.mp4"
+    },
+    {
+        "colour": "blue",
+        "sign": "../videos/blue.mp4"
+    },
+    {
+        "colour": "purple",
+        "sign": "../videos/purple.mp4"
+    },
+    {
+        "colour": "black",
+        "sign": "../videos/black.mp4"
+    },
+    {
+        "colour": "white",
+        "sign": "../videos/white.mp4"
+    },
+    {
+        "colour": "pink",
+        "sign": "../videos/pink.mp4"
+    }
+]
