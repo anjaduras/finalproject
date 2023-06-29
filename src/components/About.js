@@ -18,7 +18,7 @@ function About() {
       </header>
       <img src={me} alt="" width={300} className='me' />
       <div className='AboutContent'>
-        <h4>“The elevator to success is out of order. You’ll have to use the stairs, one step at a time.” — Joe Girard</h4>
+        <h4 className='BethEllenPhrase'>“The elevator to success is out of order. You’ll have to use the stairs, one step at a time.” — Joe Girard</h4>
         <p className='essay'>
           Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
 
@@ -34,12 +34,12 @@ function About() {
           <img src={about2} alt="" width={400} />
           <img src={about1} alt="" width={400} />
           <img src={about3} alt="" width={400} />
-          {/* <p>baking</p>
-          <p>art</p>
-          <p>cats</p> */}
+         
 
         </div>
-        <h3>Check out my <Link to="https://www.youtube.com/channel/UCuCxer1qR2BBeF99V_n3mKA">YouTube.</Link></h3>
+        <h4 className='BethEllenPhrase'>baking</h4>
+          <h4 className='BethEllenPhrase'>art</h4>
+          <h4 className='BethEllenPhrase'>cats</h4>
       </div>
       <footer>
         <a href="https://www.instagram.com/tashoklasna/">

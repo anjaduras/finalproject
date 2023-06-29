@@ -14,6 +14,8 @@ function Contact() {
                 <p>Linkedin: <Link to="https://www.linkedin.com/in/annaduras/" className='SocialLink'> linkedin.com/in/annaduras/</Link> </p>
                 <p>GitHub: <Link to="https://github.com/anjaduras" className='SocialLink'> github.com/anjaduras</Link> </p>
                 <p>Instagram: <Link to="https://www.instagram.com/tashoklasna/" className='SocialLink'> instagram.com/tashoklasna/</Link> </p>
+                <br />
+                <p className='BethEllenPhrase'>Thanks for your attention!</p>
             </div>
         </div>
     );

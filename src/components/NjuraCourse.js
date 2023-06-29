@@ -70,7 +70,7 @@ function NjuraCourse() {
                     ))}
                 </ul>
             ) : (
-                <p>No video suggestions available.</p>
+                <p className='BethEllenPhrase'>No video suggestions available.</p>
             )}
         </div>
     );

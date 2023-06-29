@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import React, { useState, useEffect } from 'react';
 import '../styles/Home.css';
 import DecodingList from './DecodingList';
-import { FaGithub, FaInstagram, FaLinkedin, FaMoon, FaSun } from 'react-icons/fa';
+import { FaGithub, FaInstagram, FaLinkedin, FaMoon, FaSun, FaYoutube } from 'react-icons/fa';
 
 function Home() {
   const temporary = "images/blue.png"
@@ -38,7 +38,7 @@ function Home() {
 
       <div className='infocard'>
         <div className='cardText'>
-          <h2>WAS IST UGS?</h2>
+          <h2> <span className='BethEllenPhrase'>Was</span> IST UGS?</h2>
           <img src={emoji1} alt="" width={50} />
           <p>Die Ukrainische Gebärdensprache (UGS) ist eine Kommunikationsform, die von Gehörlosen und hörgeschädigten Menschen in der Ukraine verwendet wird. Sie basiert auf Handgesten und Körperbewegungen, um Informationen zu vermitteln. UGS ist eine eigenständige und visuell orientierte Sprache, die eine effektive Kommunikation ermöglicht und die Gehörlosengemeinschaft in der Ukraine verbindet. </p>
         </div>
@@ -49,11 +49,11 @@ function Home() {
 
       <div className='infocard'>
         <div className='cardText'>
-          <h2>WOFÜR IST DIESE SEITE?</h2>
+          <h2><span className='BethEllenPhrase'>Wofür</span> IST DIESE SEITE?</h2>
           <img src={emoji2} alt="" width={50} />
           <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores </p>
           <br /><br /><br />
-          <h2>HOW TO USE?</h2>
+          <h2><span className='BethEllenPhrase'>How</span> TO USE?</h2>
           <img src={emoji4} alt="" width={50} />
           <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores </p>
         </div>
@@ -70,7 +70,7 @@ function Home() {
 
       <div className='infocard'>
         <div className='cardText'>
-          <h2>WHO AM I?</h2>
+          <h2><span className='BethEllenPhrase'>Who</span> AM I?</h2>
           <p>Leidenschaftlicher Frontend-Entwickler mit vielen Ideen. Engagiert für die Schaffung benutzerfreundlicher Web-Erlebnisse. Detailorientiert mit Fokus auf qualitativ hochwertigem Code.
           Leidenschaftlicher Frontend-Entwickler mit vielen Ideen. Engagiert für die Schaffung benutzerfreundlicher Web-Erlebnisse. Detailorientiert mit Fokus auf qualitativ hochwertigem Code.
             <Link to="/about"> Get to know me better.</Link>
@@ -90,6 +90,9 @@ function Home() {
         </a>
         <a href="https://github.com/anjaduras">
           <FaGithub size={50} className='icon' />
+        </a>
+        <a href="https://www.youtube.com/channel/UCuCxer1qR2BBeF99V_n3mKA">
+          <FaYoutube size={50} className='icon' />
         </a>
       </footer>
     </div>
