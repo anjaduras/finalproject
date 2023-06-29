@@ -3,26 +3,34 @@
     font-size: 25px;
     text-align: center;
 }
-.AboutHeader{
+
+.AboutHeader {
     height: 150px;
     background-color: #FFD600;
     padding: 5%;
 }
-.AboutContent{
+
+.AboutContent {
     padding: 5%;
 }
-.me{
+
+.me {
     border-radius: 100%;
     margin-top: -8%;
 }
 
-.ThingsILike{
+.ThingsILike {
     display: flex;
     justify-content: space-evenly;
 }
 
-.essay{
+.essay {
     padding: 7%;
 }
 
- 
+.ThingsILikeCaps {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: -2%;
+}

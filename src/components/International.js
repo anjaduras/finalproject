@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import '../styles/International.css';
 import { FaGithub, FaInstagram, FaLinkedin, FaYoutube } from 'react-icons/fa';
@@ -9,6 +9,21 @@ function International() {
     const DHH = "images/international/DHH.png"
     const manimundo = "images/international/manimundo.png"
     const VKK = "images/international/VKK.png"
+    const [name, setName] = useState('');
+    const [language, setLanguage] = useState('');
+    const [level, setLevel] = useState('');
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        // Handle form submission (e.g., send data to backend or perform actions)
+        // You can access the form data using the `name`, `language`, and `level` variables
+        console.log('Form submitted:', { name, language, level });
+        // Reset form fields
+        setName('');
+        setLanguage('');
+        setLevel('');
+    };
+
     return (
         <div className='InterBody'>
 
@@ -67,6 +82,44 @@ function International() {
                 </div>
 
             </div>
+
+            <form onSubmit={handleSubmit} className='Form'>
+                <div>
+                    <label htmlFor="name">Your Name:</label>
+                    <input
+                        type="text"
+                        id="name"
+                        value={name}
+                        onChange={(e) => setName(e.target.value)}
+                        required
+                    />
+                </div>
+                <div>
+                    <label htmlFor="language">Language:</label>
+                    <input
+                        type="text"
+                        id="language"
+                        value={language}
+                        onChange={(e) => setLanguage(e.target.value)}
+                        required
+                    />
+                </div>
+                <div>
+                    <label htmlFor="level">Proficiency Level:</label>
+                    <select
+                        id="level"
+                        value={level}
+                        onChange={(e) => setLevel(e.target.value)}
+                        required
+                    >
+                        <option value="">Select level</option>
+                        <option value="beginner">Beginner</option>
+                        <option value="intermediate">Intermediate</option>
+                        <option value="advanced">Advanced</option>
+                    </select>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
 
             <footer>
                 <div className='socials'>

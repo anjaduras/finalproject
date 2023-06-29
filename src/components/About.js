@@ -30,16 +30,15 @@ function About() {
         <h2>THINGS I LIKE:</h2>
 
         <div className='ThingsILike'>
-
           <img src={about2} alt="" width={400} />
           <img src={about1} alt="" width={400} />
           <img src={about3} alt="" width={400} />
-         
-
         </div>
-        <h4 className='BethEllenPhrase'>baking</h4>
-          <h4 className='BethEllenPhrase'>art</h4>
-          <h4 className='BethEllenPhrase'>cats</h4>
+        <div className='ThingsILikeCaps'>
+        <h3 className='BethEllenPhrase'>baking</h3>
+          <h3 className='BethEllenPhrase'>art</h3>
+          <h3 className='BethEllenPhrase'>cats</h3>
+      </div>
       </div>
       <footer>
         <a href="https://www.instagram.com/tashoklasna/">
