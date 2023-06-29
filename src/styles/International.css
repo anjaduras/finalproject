@@ -1,38 +1,70 @@
 .InterBody {
     background-color: #FAFAFA;
-    font-size: 25px;
-}
-
-.InterHeader {
-    height: 20%;
+    font-size: 18px;
+  }
+  
+  .InterHeader {
+    height: 20vh;
     background-color: #FFD600;
-    padding: 10%;
-}
-
-.quelle {
+    padding: 5%;
+    text-align: center;
+  }
+  
+  .quelle {
     display: flex;
-    flex-direction: row;
-    padding: 5%;
-}
-
-.quelleText{
-    padding: 5%;
-}
-
-.Form{
-    background-color: #FFD600;
-    /* display: flex;
     flex-direction: column;
-    justify-content: center; */
+    align-items: center;
+    padding: 5%;
+  }
+  
+  .quelleText {
+    padding: 5%;
+    text-align: left;
+  }
+  
+  .quelleImage {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .Form {
+    background-color: #FFD600;
     padding: 5%;
     margin: 5%;
     text-align: center;
-    /* width: 50%; */
     border-radius: 50px;
-}
-
-.Form input, select, button{
+  }
+  
+  .Form input,
+  .Form select,
+  .Form button {
     padding: 5px;
     border-radius: 30px;
-    border-color: transparent
-}
+    border-color: transparent;
+  }
+  
+  @media screen and (min-width: 768px) {
+    .InterBody {
+      font-size: 25px;
+    }
+  
+    .InterHeader {
+      padding: 4%;
+    }
+  
+    .quelle {
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: center;
+    }
+  
+    .quelleText {
+      padding: 2%;
+    }
+  
+    .quelleImage {
+      width: 300px;
+      height: 300px;
+    }
+  }
+  

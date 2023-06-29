@@ -1,8 +1,45 @@
-.gameBody{
+.gameBody {
     padding: 10%;
     text-align: center;
-}
-.resultContainer {
+  }
+  
+  .gameButton {
+    padding: 3%;
+    background-color: #FFD600;
+    border-color: transparent;
+    border-radius: 100%;
+    font-weight: 900;
+  }
+  
+  .gameButton:hover{
+    background-color: #fde779;
+    transition: 400ms ease-in-out;
+  }
+
+  .BackButton {
+    padding: 5%;
+    width: 95%;
+  }
+  
+  .continueButton {
+    padding: 1%;
+    width: 10%;
+  }
+  
+  .BackButton:hover {
+    background-color: rgb(190, 190, 190);
+  }
+  
+  .continueButton:hover {
+    background-color: rgb(190, 190, 190);
+  }
+  
+  .gesture {
+    border-radius: 10%;
+    max-width: 100%;
+  }
+  
+  .resultContainer {
     position: fixed;
     top: 0;
     left: 0;
@@ -33,17 +70,7 @@
     font-weight: 800;
   }
   
-  .continueButton {
-    padding: 10px 20px;
-    font-size: 18px;
-    background-color: #fff;
-    color: #000;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  .endGameContainer{
+  .endGameContainer {
     position: fixed;
     top: 0;
     left: 0;
@@ -56,10 +83,35 @@
     justify-content: center;
     z-index: 9999;
   }
-
-  resultMessage{
+  
+  .resultMessage {
     font-size: 24px;
     color: white;
     margin-bottom: 20px;
     transition: 20ms;
   }
+  
+  @media (max-width: 768px) {
+    .gameBody {
+      padding: 5%;
+    }
+  
+    .gameButton {
+      padding: 3%;
+    }
+  
+    .BackButton {
+      padding: 3%;
+      width: fit-content;
+    }
+  
+    .continueButton {
+      padding: 2%;
+      width: fit-content;
+    }
+  
+    .resultMessage {
+      font-size: 18px;
+    }
+  }
+  

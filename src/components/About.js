@@ -4,14 +4,13 @@ import '../styles/About.css';
 import { FaGithub, FaInstagram, FaLinkedin } from 'react-icons/fa';
 
 function About() {
-  const image = "images/blue.png"
-  const me = "images/me.jpg"
-  const about1 = "images/about1.jpg"
-  const about2 = "images/about2.jpg"
-  const about3 = "images/about3.jpg"
+  const image = "images/blue.png";
+  const me = "images/me.jpg";
+  const about1 = "images/about1.jpg";
+  const about2 = "images/about2.jpg";
+  const about3 = "images/about3.jpg";
   return (
     <div className='AboutBody'>
-
       <header className='AboutHeader'>
         <Link to="/" className='backLink'>ZURÜCK</Link>
         <h1>ABOUT ME</h1>
@@ -28,17 +27,21 @@ function About() {
         </p>
 
         <h2>THINGS I LIKE:</h2>
-
+<br />
         <div className='ThingsILike'>
-          <img src={about2} alt="" width={400} />
-          <img src={about1} alt="" width={400} />
-          <img src={about3} alt="" width={400} />
+          <div>
+            <img src={about2} alt="" width={400} height={500}/>
+            <h3 className='BethEllenPhrase'>baking</h3>
+          </div>
+          <div>
+            <img src={about1} alt="" width={400} height={500}/>
+            <h3 className='BethEllenPhrase'>art</h3>
+          </div>
+          <div>
+            <img src={about3} alt="" width={400} height={500} />
+            <h3 className='BethEllenPhrase'>cats</h3>
+          </div>
         </div>
-        <div className='ThingsILikeCaps'>
-        <h3 className='BethEllenPhrase'>baking</h3>
-          <h3 className='BethEllenPhrase'>art</h3>
-          <h3 className='BethEllenPhrase'>cats</h3>
-      </div>
       </div>
       <footer>
         <a href="https://www.instagram.com/tashoklasna/">

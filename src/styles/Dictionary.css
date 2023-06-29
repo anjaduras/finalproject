@@ -27,38 +27,19 @@
   width: 30px;
 }
 
-.red {
-  text-decoration: underline rgb(181, 4, 4) 3px;
-}
+@media (max-width: 768px) {
+  .DictionaryBody {
+    padding: 2%;
+    font-size: 20px;
+  }
 
-.orange {
-  text-decoration: underline rgb(224, 105, 0) 3px;
-}
+  .learnArea {
+    padding: 2%;
+    font-size: 25px;
+  }
 
-.yellow {
-  text-decoration: underline rgb(255, 255, 40) 3px;
-}
-
-.green {
-  text-decoration: underline rgb(0, 255, 72) 3px;
-}
-
-.blue{
-  text-decoration: underline rgb(9, 9, 113) 3px;
-}
-
-.purple{
-  text-decoration: underline rgb(115, 0, 115) 3px;
-}
-
-.black {
-  text-decoration: underline black 3px;
-}
-
-.white{
-  text-decoration: underline rgb(217, 213, 213) 3px;
-}
-
-.pink {
-  text-decoration: underline rgb(255, 0, 204) 3px;
+  .DictionaryList {
+    padding: 20px;
+    margin: 10px;
+  }
 }

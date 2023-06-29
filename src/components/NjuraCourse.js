@@ -55,6 +55,7 @@ function NjuraCourse() {
                 <p>
                     Hier teile ich Tutorials um anderen beim Erlernen der UGS zu helfen und ein tieferes Verständnis für die gehörlosen Gemeinschaft zu schaffen. Complett beginner friendly!
                 </p>
+                <br />
                 <input type='text' value={searchQuery} onChange={handleInputChange} className='NPInput' placeholder='Search...'/>
             </header>
             {videoSuggestions.length > 0 ? (

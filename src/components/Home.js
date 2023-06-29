@@ -107,7 +107,7 @@ function Home() {
           </p>
           <br />
         </div>
-        <img src={me} alt="" width={300} />
+        <img src={me} alt="" width={300} style={{borderRadius:50}}/>
       </div>
 
 

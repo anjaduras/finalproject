@@ -5,16 +5,32 @@
     align-items: center;
     height: 100vh;
     flex-direction: column;
-}
-
-.ContactCard {
+  }
+  
+  .ContactCard {
     background-color: #FAFAFA;
     text-align: center;
     padding: 50px;
     border-radius: 50px;
-}
-
-.SocialLink{
+  }
+  
+  .SocialLink {
     font-weight: 600;
     color: #3C8AFF;
-}
+  }
+  
+  .ContactInfo {
+    margin-top: 20px;
+  }
+  
+  @media (max-width: 768px) {
+    .ContactCard {
+      padding: 30px;
+      border-radius: 30px;
+    }
+  
+    .SocialLink {
+      font-size: 18px;
+    }
+  }
+  

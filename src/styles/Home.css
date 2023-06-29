@@ -5,10 +5,10 @@
 }
 
 .radial-gradient {
-  /* Fallback if gradeints don't work */
+  /* Fallback if gradients don't work */
   background: #3C8AFF;
   height: 500px;
-  /*Linear gradient... */
+  /* Linear gradient... */
   background:
     radial-gradient(at center, #FFD600, #3C8AFF);
 }
@@ -22,6 +22,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  
 }
 
 footer {
@@ -36,6 +37,7 @@ h1 {
 
 .infocard {
   display: flex;
+  flex-direction: row;
   padding: 10%;
 }
 
@@ -76,12 +78,45 @@ ul {
   color: #FFD600;
 }
 
-@keyframes playScribble {
-  0% {
-    stroke-dashoffset: 100%;
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .HeaderContent {
+    padding: 5%;
   }
 
-  100% {
-    stroke-dashoffset: 0%;
+  .infocard {
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .cardText {
+    padding: 1% 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .HeaderContent {
+    padding: 2%;
+  }
+
+  .navbar {
+    flex-direction: column;
+  }
+
+  .infocard {
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 320px) {
+  h1 {
+    font-size: 24px;
+  }
+
+  .infocard {
+    padding: 1%;
   }
 }

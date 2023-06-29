@@ -9,20 +9,6 @@ function International() {
     const DHH = "images/international/DHH.png"
     const manimundo = "images/international/manimundo.png"
     const VKK = "images/international/VKK.png"
-    const [name, setName] = useState('');
-    const [language, setLanguage] = useState('');
-    const [level, setLevel] = useState('');
-
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        // Handle form submission (e.g., send data to backend or perform actions)
-        // You can access the form data using the `name`, `language`, and `level` variables
-        console.log('Form submitted:', { name, language, level });
-        // Reset form fields
-        setName('');
-        setLanguage('');
-        setLevel('');
-    };
 
     return (
         <div className='InterBody'>
@@ -34,7 +20,7 @@ function International() {
             </header>
 
             <div className='quelle'>
-                <img src={STS} alt="" width={300} />
+                <img src={STS} alt="" width={300} className='quelleImage'/>
                 <div className='quelleText'>
                     <Link to="https://www.spreadthesign.com/"><h2>SPREAD THE SIGN</h2></Link>
 
@@ -44,7 +30,7 @@ function International() {
             </div>
 
             <div className='quelle'>
-                <img src={GG} alt="" width={300} />
+                <img src={GG} alt="" width={300} className='quelleImage'/>
                 <div className='quelleText'>
                     <Link to="https://www.gebaerdengrips.de/"><h2>GEBAERDENGRIPS</h2></Link>
 
@@ -54,7 +40,7 @@ function International() {
             </div>
 
             <div className='quelle'>
-                <img src={DHH} alt="" width={300} />
+                <img src={DHH} alt="" width={300} className='quelleImage'/>
                 <div className='quelleText'>
                     <Link to="https://dialog-in-hamburg.de/dialog-im-stillen/"><h2>DIALOGHAUS HAMBURG</h2></Link>
 
@@ -64,7 +50,7 @@ function International() {
             </div>
 
             <div className='quelle'>
-                <img src={manimundo} alt="" width={300} />
+                <img src={manimundo} alt="" width={300} className='quelleImage'/>
                 <div className='quelleText'>
                     <Link to="https://manimundo.de/"><h2>MANIMUNDO</h2></Link>
 
@@ -74,7 +60,7 @@ function International() {
             </div>
 
             <div className='quelle'>
-                <img src={VKK} alt="" width={300} />
+                <img src={VKK} alt="" width={300} className='quelleImage'/>
                 <div className='quelleText'>
                     <Link to="https://web.kestner.de/gebaerdensprache-einfuehrung/"><h2>VERLAG KARIN KESTNER</h2></Link>
 
@@ -82,58 +68,7 @@ function International() {
                 </div>
            
             </div>
-            <h3 className='BethEllenPhrase' style={{textAlign:'center'}}>You can also apply for Sign Language courses:</h3>
-         
-            <form onSubmit={handleSubmit} className='Form'>
-                <div>
-                    <label htmlFor="name">Your Name:</label>
-                    <input
-                        type="text"
-                        id="name"
-                        value={name}
-                        onChange={(e) => setName(e.target.value)}
-                        required
-                    />
-                </div>
-                <div>
-                    <label htmlFor="language">Sign Language:</label>
-                    <select
-                        id="language"
-                        value={language}
-                        onChange={(e) => setLanguage(e.target.value)}
-                        required
-                    >
-                        <option value="">Select level</option>
-                        <option value="beginner">English</option>
-                        <option value="intermediate">German</option>
-                        <option value="advanced">French</option>
-                        <option value="beginner">Ukrainian</option>
-                        <option value="intermediate">Polish</option>
-                        <option value="advanced">Arabish</option>
-                        <option value="beginner">Portugeese</option>
-                        <option value="intermediate">Japaneese</option>
-                        <option value="advanced">Abanian</option>
-                        <option value="beginner">Irish</option>
-                        <option value="intermediate">Greek</option>
-                        <option value="advanced">Italian</option>
-                    </select>
-                </div>
-                <div>
-                    <label htmlFor="level">Proficiency Level:</label>
-                    <select
-                        id="level"
-                        value={level}
-                        onChange={(e) => setLevel(e.target.value)}
-                        required
-                    >
-                        <option value="">Select level</option>
-                        <option value="beginner">Beginner</option>
-                        <option value="intermediate">Intermediate</option>
-                        <option value="advanced">Advanced</option>
-                    </select>
-                </div>
-                <button type="submit">Submit</button>
-            </form>
+            {/* <h3 className='BethEllenPhrase' style={{textAlign:'center'}}>You can also apply for Sign Language courses:</h3> */}
 
             <footer>
                 <div className='socials'>

@@ -60,7 +60,7 @@ function Game() {
         magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
       </p>
 
-      <img src={randomPicture} width={300} />
+      <img src={randomPicture} width={300} className='gesture'/>
 
       <h3 style={{ color: 'white' }}>What does this look like?</h3>
       {randomLetters.map((letter, index) => (
@@ -82,8 +82,9 @@ function Game() {
           <button className="continueButton" onClick={handleContinue}>
             Continue
           </button>
+          <br />
           <Link to="/">
-            <button>Back to Homepage</button>
+            <button className='BackButton'>Back to Homepage</button>
           </Link>
         </div>
       )}
@@ -94,12 +95,12 @@ function Game() {
             {score === 7 ? 'Congratulations! You won!' : 'Game over! Practice some more!'}
           </div>
           <Link to="/">
-            <button>Back to Homepage</button>
+            <button className='BackButton'>Back to Homepage</button>
           </Link>
         </div>
       )}
-
-      <p>Current score: {score}</p>
+<br /><br />
+      <h4 style={{color:'#00308F'}}>Current score: {score}</h4>
     </div>
   );
 }
