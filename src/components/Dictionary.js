@@ -76,7 +76,7 @@ function Dictionary() {
               onClick={() => handleColorClick(color)}
               className={`DictionaryList ${selectedColor === color ? 'selected' : ''}`}
               style={{
-                backgroundColor: color.colour,
+                backgroundColor: color.colour === 'pink' ? '#FF007F' : color.colour,
                 color: color.colour === 'black' ? 'white' : 'black',
               }}
             >

@@ -11,6 +11,10 @@
 
 .quelle {
     display: flex;
-    flex-direction: column;
-    padding: 10%;
+    flex-direction: row;
+    padding: 5%;
+}
+
+.quelleText{
+    padding: 5%;
 }
