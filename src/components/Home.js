@@ -38,9 +38,12 @@ function Home() {
 
       <div className='infocard'>
         <div className='cardText'>
-          <h2> <span className='BethEllenPhrase'>Was</span> IST UGS?</h2>
-          <img src={emoji1} alt="" width={50} />
-          <p>Die Ukrainische Gebärdensprache (UGS) ist eine Kommunikationsform, die von Gehörlosen und hörgeschädigten Menschen in der Ukraine verwendet wird. Sie basiert auf Handgesten und Körperbewegungen, um Informationen zu vermitteln. UGS ist eine eigenständige und visuell orientierte Sprache, die eine effektive Kommunikation ermöglicht und die Gehörlosengemeinschaft in der Ukraine verbindet. </p>
+          <div className='cardName'>
+            <h2> <span className='BethEllenPhrase'>Was</span> IST UGS?</h2>
+            <img src={emoji1} alt="" width={40} />
+            </div>
+            <p>Die Ukrainische Gebärdensprache (UGS) ist eine Kommunikationsform, die von Gehörlosen und hörgeschädigten Menschen in der Ukraine verwendet wird. Sie basiert auf Handgesten und Körperbewegungen, um Informationen zu vermitteln. UGS ist eine eigenständige und visuell orientierte Sprache, die eine effektive Kommunikation ermöglicht und die Gehörlosengemeinschaft in der Ukraine verbindet. </p>
+          
         </div>
         <img src={home1} alt="" width={500} />
       </div>
@@ -49,12 +52,17 @@ function Home() {
 
       <div className='infocard'>
         <div className='cardText'>
-          <h2><span className='BethEllenPhrase'>Wofür</span> IST DIESE SEITE?</h2>
-          <img src={emoji2} alt="" width={50} />
+          <div className='cardName'>
+            <h2><span className='BethEllenPhrase'>Wofür</span> IST DIESE SEITE?</h2>
+            <img src={emoji2} alt="" width={50} />
+          </div>
           <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores </p>
           <br /><br /><br />
-          <h2><span className='BethEllenPhrase'>How</span> TO USE?</h2>
-          <img src={emoji4} alt="" width={50} />
+
+          <div className='cardName'>
+            <h2><span className='BethEllenPhrase'>How</span> TO USE?</h2>
+            <img src={emoji4} alt="" width={40} />
+          </div>
           <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores </p>
         </div>
         <img src={home2} alt="" width={500} />
@@ -70,14 +78,17 @@ function Home() {
 
       <div className='infocard'>
         <div className='cardText'>
+          <div className='cardName'>
           <h2><span className='BethEllenPhrase'>Who</span> AM I?</h2>
+          <img src={emoji3} alt="" width={50} />
+          </div>
           <p>Leidenschaftlicher Frontend-Entwickler mit vielen Ideen. Engagiert für die Schaffung benutzerfreundlicher Web-Erlebnisse. Detailorientiert mit Fokus auf qualitativ hochwertigem Code.
-          Leidenschaftlicher Frontend-Entwickler mit vielen Ideen. Engagiert für die Schaffung benutzerfreundlicher Web-Erlebnisse. Detailorientiert mit Fokus auf qualitativ hochwertigem Code.
+            Leidenschaftlicher Frontend-Entwickler mit vielen Ideen. Engagiert für die Schaffung benutzerfreundlicher Web-Erlebnisse. Detailorientiert mit Fokus auf qualitativ hochwertigem Code.
             <Link to="/about"> Get to know me better.</Link>
           </p>
           <br />
         </div>
-        <img src={me} alt="" width={300}/>
+        <img src={me} alt="" width={300} />
       </div>
 
 

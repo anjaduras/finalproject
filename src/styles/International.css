@@ -18,3 +18,21 @@
 .quelleText{
     padding: 5%;
 }
+
+.Form{
+    background-color: #FFD600;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center; */
+    padding: 5%;
+    margin: 5%;
+    text-align: center;
+    /* width: 50%; */
+    border-radius: 50px;
+}
+
+.Form input, select, button{
+    padding: 5px;
+    border-radius: 30px;
+    border-color: transparent
+}

@@ -80,9 +80,10 @@ function International() {
 
                     <p>Die Website bietet eine Einführung in die Gebärdensprache. Sie ist eine Ressource für Menschen, die sich für die Kommunikation mit Gehörlosen interessieren oder selbst Gebärdensprache lernen möchten. Die Website bietet Informationen über die Grundlagen der Gebärdensprache, wie beispielsweise das Fingeralphabet und grundlegende Vokabeln. Zudem enthält sie Videos, die die korrekte Ausführung der Gebärden veranschaulichen. Die Webseite ist eine wertvolle Anlaufstelle für den Einstieg in die Gebärdensprache und fördert das Verständnis und die Inklusion gehörloser Menschen. </p>
                 </div>
-
+           
             </div>
-
+            <h3 className='BethEllenPhrase' style={{textAlign:'center'}}>You can also apply for Sign Language courses:</h3>
+         
             <form onSubmit={handleSubmit} className='Form'>
                 <div>
                     <label htmlFor="name">Your Name:</label>
@@ -95,14 +96,27 @@ function International() {
                     />
                 </div>
                 <div>
-                    <label htmlFor="language">Language:</label>
-                    <input
-                        type="text"
+                    <label htmlFor="language">Sign Language:</label>
+                    <select
                         id="language"
                         value={language}
                         onChange={(e) => setLanguage(e.target.value)}
                         required
-                    />
+                    >
+                        <option value="">Select level</option>
+                        <option value="beginner">English</option>
+                        <option value="intermediate">German</option>
+                        <option value="advanced">French</option>
+                        <option value="beginner">Ukrainian</option>
+                        <option value="intermediate">Polish</option>
+                        <option value="advanced">Arabish</option>
+                        <option value="beginner">Portugeese</option>
+                        <option value="intermediate">Japaneese</option>
+                        <option value="advanced">Abanian</option>
+                        <option value="beginner">Irish</option>
+                        <option value="intermediate">Greek</option>
+                        <option value="advanced">Italian</option>
+                    </select>
                 </div>
                 <div>
                     <label htmlFor="level">Proficiency Level:</label>
