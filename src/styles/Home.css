@@ -1,88 +1,87 @@
 .homeBody {
-    background-color: #FAFAFA;
-    font-size: 25px;
-    text-align: center;
-  }
-  
-  .radial-gradient {
-    /* Fallback if gradeints don't work */
-    background: #3C8AFF;
-    height:500px;
-    /*Linear gradient... */
-    background: 
-      radial-gradient(
-       at center, #FFD600, #3C8AFF
-      );
+  background-color: #FAFAFA;
+  font-size: 25px;
+  text-align: center;
+}
+
+.radial-gradient {
+  /* Fallback if gradeints don't work */
+  background: #3C8AFF;
+  height: 500px;
+  /*Linear gradient... */
+  background:
+    radial-gradient(at center, #FFD600, #3C8AFF);
+}
+
+.HeaderContent {
+  text-align: center;
+  padding: 10%;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+footer {
+  background-color: #3C8AFF;
+  padding: 7%;
+}
+
+h1 {
+  color: #000;
+  font-weight: 800;
+}
+
+.infocard {
+  display: flex;
+  padding: 10%;
+}
+
+.cardText {
+  text-align: left;
+  padding: 1%;
+}
+
+.cardName {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.cardName img {
+  height: auto;
+  max-width: 50px;
+  margin-right: 10px;
+}
+
+ul {
+  list-style: none;
+}
+
+.dorplay {
+  padding: 5%;
+  text-align: center;
+}
+
+.HomeButton {
+  background-color: #FFD600;
+  border-radius: 10px;
+  padding: 10px;
+  border-color: transparent;
+}
+
+.icon {
+  color: #FFD600;
+}
+
+@keyframes playScribble {
+  0% {
+    stroke-dashoffset: 100%;
   }
 
-  .HeaderContent{
-text-align: center;
-padding: 10%;
+  100% {
+    stroke-dashoffset: 0%;
   }
-
-  .navbar {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-  }
-  
-  footer {
-    background-color: #3C8AFF;
-    padding: 7%;
-  }
-  
-  h1 {
-    color: #000;
-    font-weight: 800;
-  }
-  
-  .infocard {
-    display: flex;
-    padding: 10%;
-  }
-  
-  .cardText {
-    text-align: left;
-    padding: 1%;
-  }
-  
-  .cardName {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-  }
-  
-  .cardName img {
-    height: auto;
-    max-width: 50px;
-    margin-right: 10px;
-  }
-  
-  ul {
-    list-style: none;
-  }
-  
-  .dorplay {
-    padding: 5%;
-  }
-  
-  .HomeButton {
-    background-color: #FFD600;
-    border-radius: 10px;
-    padding: 10px;
-    border-color: transparent;
-  }
-  
-  .icon {
-    color: #FFD600;
-  }
-  
-  @keyframes playScribble {
-    0% {
-      stroke-dashoffset: 100%;
-    }
-    100% {
-      stroke-dashoffset: 0%;
-    }
-  }
- 
+}

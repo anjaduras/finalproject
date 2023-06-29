@@ -39,7 +39,7 @@ function Dictionary() {
   };
 
   return (
-    <div className='DictionaryBody'>
+    <div className='DictionaryBody'  style={{ backgroundColor: '#3C8AFF', minHeight: '100vh' }}>
       <Link to="/" className='backLink'>ZURÜCK</Link>
       <h1>USL DICTIONARY</h1>
       <p>

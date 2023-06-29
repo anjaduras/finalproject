@@ -1,14 +1,16 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
 import '../styles/Game.css';
+import { Link } from 'react-router-dom';
 import AlphabetData from '../alphabet.json';
 
 function Game() {
-  const [selectedAnswer, setSelectedAnswer] = useState(null);
-  const [score, setScore] = useState(0);
   const randomLetter = AlphabetData[Math.floor(Math.random() * AlphabetData.length)];
   const randomPicture = randomLetter.photo;
-  const heart = 'images/heart.png';
+  const [selectedAnswer, setSelectedAnswer] = useState(null);
+  const [score, setScore] = useState(0);
+  const [showResult, setShowResult] = useState(false);
+  const [isCorrect, setIsCorrect] = useState(false);
+  const [showEndGame, setShowEndGame] = useState(false);
 
   const randomLetters = AlphabetData
     .filter(letter => letter.letter !== randomLetter.letter)
@@ -22,44 +24,82 @@ function Game() {
 
   const handleAnswerSelection = (answer) => {
     if (answer === correctAnswer) {
-      setSelectedAnswer(answer);
+      setIsCorrect(true);
       setScore(prevScore => prevScore + 1);
     } else {
-      setSelectedAnswer(null);
+      setIsCorrect(false);
+      setScore(prevScore => prevScore - 1);
+    }
+    setSelectedAnswer(answer);
+    setShowResult(true);
+
+    if (score === 6 || score === -1) {
+      setShowEndGame(true);
     }
   };
 
+  const handleContinue = () => {
+    setSelectedAnswer(null);
+    setShowResult(false);
+    setIsCorrect(false);
+  };
+
+  let resultMessage = '';
+  if (score < 0) {
+    resultMessage = 'Try again!';
+  } else if (score === 7) {
+    resultMessage = 'You win!';
+  }
+
   return (
-    <div className='gameBody'>
+    <div style={{ backgroundColor: '#3C8AFF', minHeight: '100vh' }} className='gameBody'>
       <Link to='/' className='backLink'>ZURÜCK</Link>
-      <h1>GUESS THE SIGN!</h1>
+      <h1>Guess the sign!</h1>
       <p>
-        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
-        ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
+        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
+        magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
       </p>
-      <br /><br /><br /><br />
-      <img src={randomPicture} alt='Random Letter' className='gesture' />
-      <br /><br /><br />
-      <h3>What does this look like?</h3>
+
+      <img src={randomPicture} width={300} />
+
+      <h3 style={{ color: 'white' }}>What does this look like?</h3>
       {randomLetters.map((letter, index) => (
         <button
           key={index}
           className={`gameButton ${selectedAnswer === letter.letter ? 'selected' : ''}`}
           onClick={() => handleAnswerSelection(letter.letter)}
+          disabled={showResult}
         >
           {letter.letter}
         </button>
       ))}
-      {selectedAnswer !== null && (
-        <p className={`feedback ${selectedAnswer === correctAnswer ? 'correct' : 'incorrect'}`}>
-          {selectedAnswer === correctAnswer ? 'Correct!' : 'Incorrect!'}
-        </p>
+
+      {showResult && (
+        <div className="resultContainer">
+          <div className={`resultMessage ${isCorrect ? 'correct' : 'incorrect'}`}>
+            {isCorrect ? 'Correct!' : 'Incorrect!'}
+          </div>
+          <button className="continueButton" onClick={handleContinue}>
+            Continue
+          </button>
+          <Link to="/">
+            <button>Back to Homepage</button>
+          </Link>
+        </div>
       )}
-      <br />
-      <p>Score: {score}</p>
-      <img src={heart} alt='' width={70} />
-      <img src={heart} alt='' width={70} />
-      <img src={heart} alt='' width={70} />
+
+      {showEndGame && (
+        <div className="endGameContainer">
+          <div className="resultMessage">
+            {score === 7 ? 'Congratulations! You won!' : 'Game over! Practice some more!'}
+          </div>
+          <Link to="/">
+            <button>Back to Homepage</button>
+          </Link>
+        </div>
+      )}
+
+      <p>Current score: {score}</p>
     </div>
   );
 }
