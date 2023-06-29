@@ -5,6 +5,25 @@ import DecodingList from './DecodingList';
 import { FaGithub, FaInstagram, FaLinkedin, FaMoon, FaSun, FaYoutube } from 'react-icons/fa';
 
 function Home() {
+
+  const [mouseXpercentage, setMouseXPercentage] = useState(0);
+  const [mouseYpercentage, setMouseYPercentage] = useState(0);
+
+  useEffect(() => {
+    function handleMouseMove(event) {
+      const windowWidth = window.innerWidth;
+      const windowHeight = window.innerHeight;
+      const xPercentage = Math.round((event.pageX / windowWidth) * 100);
+      const yPercentage = Math.round((event.pageY / windowHeight) * 100);
+      setMouseXPercentage(xPercentage);
+      setMouseYPercentage(yPercentage);
+    }
+    window.addEventListener('mousemove', handleMouseMove);
+    return () => {
+      window.removeEventListener('mousemove', handleMouseMove);
+    };
+  }, []);
+
   const temporary = "images/blue.png"
   const emoji1 = "images/emoji.png"
   const emoji2 = "images/emoji1.png"
@@ -16,24 +35,24 @@ function Home() {
   const me = "images/me.jpg"
   const background = "images/flag.jpg"
   const items = ['230 K SPEAKERS', '100 YEARS OLD', '90 DIALECTS'];
-
+  
   return (
 
-    <div className='homeBody'>
-      <header className='HomeHeader'>
+    <div>
+      <header className='radial-gradient ' style={{ background: `radial-gradient(at ${mouseXpercentage}% ${mouseYpercentage}%, #FFD600, #3C8AFF)` }}>
+        <div className='HeaderContent'>
         <div className='navbar'>
           <Link to="/njuracourse" className='backLink'>NJURA COURSE</Link>
           <Link to="/international" className='backLink'>INTERNATIONAL</Link>
           <Link to="/about" className='backLink'>ABOUT</Link>
           <Link to="/contact" className='backLink'>CONTACT</Link>
-          {/* <button className='HomeButton'>Language</button> */}
-
-        </div>
+          </div>
         <br />
         <h1>UKRAINISCHE GEBÄRDENSPRACHE</h1>
         <img src={emoji1} alt="" width={50} />
         <img src={emoji2} alt="" width={50} />
         <img src={emoji4} alt="" width={40} />
+        </div>
       </header>
 
       <div className='infocard'>

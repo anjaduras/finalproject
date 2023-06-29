@@ -4,12 +4,22 @@
     text-align: center;
   }
   
-  .HomeHeader {
-    height: 20%;
-    padding: 7%;
-    background-color: #3C8AFF;
+  .radial-gradient {
+    /* Fallback if gradeints don't work */
+    background: #3C8AFF;
+    height:500px;
+    /*Linear gradient... */
+    background: 
+      radial-gradient(
+       at center, #FFD600, #3C8AFF
+      );
   }
-  
+
+  .HeaderContent{
+text-align: center;
+padding: 10%;
+  }
+
   .navbar {
     display: flex;
     flex-direction: row;
@@ -22,7 +32,7 @@
   }
   
   h1 {
-    color: rgb(0, 0, 0);
+    color: #000;
     font-weight: 800;
   }
   
@@ -39,13 +49,13 @@
   .cardName {
     display: flex;
     flex-direction: row;
-    align-items: center; /* Align images vertically in the middle */
+    align-items: center;
   }
   
   .cardName img {
-    height: auto; /* Maintain aspect ratio */
-    max-width: 50px; /* Limit the maximum width of the images */
-    margin-right: 10px; /* Add some spacing between the images and text */
+    height: auto;
+    max-width: 50px;
+    margin-right: 10px;
   }
   
   ul {
@@ -67,3 +77,12 @@
     color: #FFD600;
   }
   
+  @keyframes playScribble {
+    0% {
+      stroke-dashoffset: 100%;
+    }
+    100% {
+      stroke-dashoffset: 0%;
+    }
+  }
+ 
