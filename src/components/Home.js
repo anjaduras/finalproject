@@ -33,8 +33,7 @@ function Home() {
   const home1 = "images/home1.jpg"
   const home2 = "images/home2.jpg"
   const me = "images/me.jpg"
-  const background = "images/flag.jpg"
-  const items = ['230 K SPEAKERS', '100 YEARS OLD', '90 DIALECTS'];
+  const items = ['230 K MENSCHEN', '100 JAHRE ALT', '90 DIALEKTE'];
   
   return (
 
@@ -42,10 +41,10 @@ function Home() {
       <header className='radial-gradient ' style={{ background: `radial-gradient(at ${mouseXpercentage}% ${mouseYpercentage}%, #FFD600, #3C8AFF)` }}>
         <div className='HeaderContent'>
         <div className='navbar'>
-          <Link to="/njuracourse" className='backLink'>NJURA COURSE</Link>
+          <Link to="/njuracourse" className='backLink'>NJURA KURS</Link>
           <Link to="/international" className='backLink'>INTERNATIONAL</Link>
-          <Link to="/about" className='backLink'>ABOUT</Link>
-          <Link to="/contact" className='backLink'>CONTACT</Link>
+          <Link to="/about" className='backLink'>ÜBER MICH</Link>
+          <Link to="/contact" className='backLink'>KONTAKT</Link>
           </div>
         <br />
         <h1>UKRAINISCHE GEBÄRDENSPRACHE</h1>
@@ -75,36 +74,37 @@ function Home() {
             <h2><span className='BethEllenPhrase'>Wofür</span> IST DIESE SEITE?</h2>
             <img src={emoji2} alt="" width={50} />
           </div>
-          <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo doloresLorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores</p>
+          <p>Diese Website soll Ressourcen zum Erlernen der ukrainischen Gebärdensprachen bereitstellen.  Es bietet eine Sammlung von Ressourcen und Tools, die Einzelpersonen beim Erlernen und Verstehen dieser Gebärdensprachen unterstützen.  Die Website empfiehlt verschiedene Plattformen und Organisationen, auf denen Benutzer auf interaktive Gebärdensprachvideos zugreifen, nach Phrasen und Vokabeln suchen und immersive Lernerfahrungen erkunden können.  Es schlägt auch Orte wie das Dialoghaus Hamburg vor, an denen Besucher in die Welt der Gehörlosengemeinschaft eintauchen und ein tieferes Verständnis für ihre täglichen Erfahrungen gewinnen können.  Darüber hinaus bietet die Website Informationen zu Online-Kursen, Lernpaketen und Einführungsmaterialien für Personen, die an der Kommunikation mit der Gehörlosengemeinschaft oder dem Erlernen der Gebärdensprache interessiert sind.  Insgesamt zielt die Website darauf ab, eine effektive Kommunikation, Empathie und Inklusivität mit der Gehörlosengemeinschaft zu fördern, indem sie wertvolle Ressourcen zum Erlernen von Gebärdensprachen bereitstellt.</p>
           <br /><br /><br />
 
           <div className='cardName'>
-            <h2><span className='BethEllenPhrase'>How</span> TO USE?</h2>
+            <h2><span className='BethEllenPhrase'>Wie</span> BUNUTZT MAN?</h2>
             <img src={emoji4} alt="" width={40} />
           </div>
-          <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores</p>
+          <p>Hab einfach Spaß!  Sie können mithilfe des Wörterbuchs neue Gebärden erkunden, auf der Seite „International“ nach Kursen suchen oder einfach mit mir auf den Plattformen abhängen, die ich in den Kontakten bereitgestellt habe.</p>
         </div>
         <img src={home2} alt="" width={500} />
       </div>
 
       <br />
       <div className='dorplay'>
-        <h2>GO TO <Link to="/dictionary">DICTIONARY</Link></h2>
-        <p>or try your luck and</p>
-        <h2><Link to="/game">PLAY</Link></h2>
+        <h2>GEH ZUM <Link to="/dictionary" style={{color:'black'}}>WÖRTERBUCH</Link></h2>
+        <p>oder versuch dein Glück und</p>
+        <h2><Link to="/game" className='ALink'>SPIEL</Link></h2>
       </div>
       <br />
 
-      <div className='infocard'>
+      <div className='infocardMe'>
         <div className='cardText'>
           <div className='cardName'>
           <h2><span className='BethEllenPhrase'>Who</span> AM I?</h2>
           <img src={emoji3} alt="" width={50} />
           </div>
           <p>Leidenschaftlicher Frontend-Entwickler mit vielen Ideen. Engagiert für die Schaffung benutzerfreundlicher Web-Erlebnisse. Detailorientiert mit Fokus auf qualitativ hochwertigem Code.
-            Leidenschaftlicher Frontend-Entwickler mit vielen Ideen. Engagiert für die Schaffung benutzerfreundlicher Web-Erlebnisse. Detailorientiert mit Fokus auf qualitativ hochwertigem Code.
-            <Link to="/about"> Get to know me better.</Link>
           </p>
+          <br /><br />
+          <Link to="/about">  <h3 style={{color:'#FFD600'}}> Get to know me better.</h3></Link>
+         
           <br />
         </div>
         <img src={me} alt="" width={300} style={{borderRadius:50}}/>

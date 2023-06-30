@@ -62,7 +62,7 @@ function Game() {
 
       <img src={randomPicture} width={300} className='gesture'/>
 
-      <h3 style={{ color: 'white' }}>What does this look like?</h3>
+      <h3 style={{ color: 'white' }}>Wie sieht das aus?</h3>
       {randomLetters.map((letter, index) => (
         <button
           key={index}
@@ -80,11 +80,11 @@ function Game() {
             {isCorrect ? 'Correct!' : 'Incorrect!'}
           </div>
           <button className="continueButton" onClick={handleContinue}>
-            Continue
+            Weiter
           </button>
           <br />
           <Link to="/">
-            <button className='BackButton'>Back to Homepage</button>
+            <button className='BackButton'>Zurück zur Startseite</button>
           </Link>
         </div>
       )}
@@ -95,12 +95,12 @@ function Game() {
             {score === 7 ? 'Congratulations! You won!' : 'Game over! Practice some more!'}
           </div>
           <Link to="/">
-            <button className='BackButton'>Back to Homepage</button>
+            <button className='BackButton'>Zurück zur Startseite</button>
           </Link>
         </div>
       )}
 <br /><br />
-      <h4 style={{color:'#00308F'}}>Current score: {score}</h4>
+      <h4 style={{color:'#00308F'}}>Momentaner Punktestand: {score}</h4>
     </div>
   );
 }

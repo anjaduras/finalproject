@@ -4,12 +4,16 @@
   }
   
   .InterHeader {
-    height: 20vh;
+    height: 20%;
     background-color: #FFD600;
-    padding: 5%;
+    
     text-align: center;
   }
   
+  .InterHeaderContent{
+    padding: 5%;
+  }
+
   .quelle {
     display: flex;
     flex-direction: column;

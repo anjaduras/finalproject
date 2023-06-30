@@ -14,9 +14,11 @@ function International() {
         <div className='InterBody'>
 
             <header className='InterHeader'>
+                <div className='InterHeaderContent'>
                 <Link to="/" className='backLink'>ZURÜCK</Link>
-                <h1>WANT TO LEARN OTHER SIGN LANGUAGES?</h1>
-                <p>Here are some recources for learning German and English sign languages. <span className='BethEllenPhrase'>Enjoy!</span> </p>
+                <h1>MÖCHTEN SIE ANDERE GEBÄRDENSPRACHEN LERNEN?</h1>
+                <p>Hier finden Sie einige Ressourcen zum Erlernen der Deutschen und Englishen Gebärdensprachen. <span className='BethEllenPhrase'>Enjoy!</span> </p>
+                </div>
             </header>
 
             <div className='quelle'>

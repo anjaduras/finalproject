@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import '../styles/About.css';
-import { FaGithub, FaInstagram, FaLinkedin } from 'react-icons/fa';
+import { FaGithub, FaInstagram, FaLinkedin, FaYoutube } from 'react-icons/fa';
 
 function About() {
   const image = "images/blue.png";
@@ -13,7 +13,7 @@ function About() {
     <div className='AboutBody'>
       <header className='AboutHeader'>
         <Link to="/" className='backLink'>ZURÜCK</Link>
-        <h1>ABOUT ME</h1>
+        <h1>ÜBER MICH</h1>
       </header>
       <img src={me} alt="" width={300} className='me' />
       <div className='AboutContent'>
@@ -26,20 +26,20 @@ function About() {
           Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
         </p>
 
-        <h2>THINGS I LIKE:</h2>
-<br />
+        <h2>DINGE, DIE ICH MAG:</h2>
+        <br />
         <div className='ThingsILike'>
           <div>
-            <img src={about2} alt="" width={400} height={500}/>
-            <h3 className='BethEllenPhrase'>baking</h3>
+            <img src={about2} alt="" width={400} height={500} />
+            <h3 className='BethEllenPhrase'>backen</h3>
           </div>
           <div>
-            <img src={about1} alt="" width={400} height={500}/>
-            <h3 className='BethEllenPhrase'>art</h3>
+            <img src={about1} alt="" width={400} height={500} />
+            <h3 className='BethEllenPhrase'>Kunst</h3>
           </div>
           <div>
             <img src={about3} alt="" width={400} height={500} />
-            <h3 className='BethEllenPhrase'>cats</h3>
+            <h3 className='BethEllenPhrase'>Katze</h3>
           </div>
         </div>
       </div>
@@ -52,6 +52,9 @@ function About() {
         </a>
         <a href="https://github.com/anjaduras">
           <FaGithub size={50} className='icon' />
+          <a href="https://www.youtube.com/channel/UCuCxer1qR2BBeF99V_n3mKA">
+            <FaYoutube size={50} className='icon' />
+          </a>
         </a>
       </footer>
     </div>

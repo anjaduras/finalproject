@@ -41,12 +41,12 @@ function Dictionary() {
   return (
     <div className='DictionaryBody'  style={{ backgroundColor: '#3C8AFF', minHeight: '100vh' }}>
       <Link to="/" className='backLink'>ZURÜCK</Link>
-      <h1>USL DICTIONARY</h1>
+      <h1>UGS WÖRTERBUCH</h1>
       <p>
         Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
       </p>
       <div className='learnArea'>
-        <h3>LEARN:</h3>
+        <h3>LERNEN:</h3>
         <br />
         <details onToggle={handleListClose}>
           <summary>ALPHABET</summary>
@@ -69,7 +69,7 @@ function Dictionary() {
         )}
         <br />
         <details onToggle={handleListClose}>
-          <summary>COLOURS</summary>
+          <summary>FARBEN</summary>
           {ColorsData.map((color) => (
             <li
               key={color.colour}
@@ -94,7 +94,7 @@ function Dictionary() {
         )}
         <br />
         <details onToggle={handleListClose}>
-          <summary>GREETINGS</summary>
+          <summary>GRÜẞE</summary>
           {GreetingData.map((greeting) => (
             <li
               key={greeting.greeting}

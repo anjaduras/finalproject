@@ -22,7 +22,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  
+
 }
 
 footer {
@@ -41,6 +41,12 @@ h1 {
   padding: 10%;
 }
 
+.infocardMe {
+  display: flex;
+  flex-direction: row;
+  padding: 15%;
+}
+
 .cardText {
   text-align: left;
   padding: 1%;
@@ -56,6 +62,17 @@ h1 {
   height: auto;
   max-width: 50px;
   margin-right: 10px;
+}
+
+.ALink{
+  color: #3C8AFF;
+}
+
+.ALink:hover{
+  color: #216dde;
+  font-size: 50px;
+  box-shadow: 0px 0px 48px 15px #FFD600;
+  transition: 1s;
 }
 
 ul {
@@ -76,6 +93,7 @@ ul {
 
 .icon {
   color: #FFD600;
+  padding: 1%;
 }
 
 /* Responsive Styles */
